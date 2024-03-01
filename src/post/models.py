@@ -7,3 +7,4 @@ class Post(models.Model):
     created_at = models.DateTimeField(auto_now_add = True, null = True)
     updated_at = models.DateTimeField(auto_now = True, null = True)
     is_actual = models.BooleanField(blank = True, null = True)
+    photo = models.ImageField(upload_to='post/imgs/', null=True)
